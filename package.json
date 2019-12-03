@@ -1,0 +1,32 @@
+{
+  "name": "typescript-express-api",
+  "version": "1.0.0",
+  "description": "ts-express-api Scaffolding babel-with-typescript-express-api",
+  "main": "index.js",
+  "author": "jackieli",
+  "scripts": {
+    "dev": "cross-env DEV_ENV=true nodemon index.js",
+    "start": "node index.js",
+    "build:cjs": "tsc",
+    "watch-ts": "tsc -w",
+    "build": "babel src --out-dir lib --copy-files --extensions '.ts,.js'",
+    "ts":"ts-babel"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/runtime": "^7.6.3",
+    "cross-env": "^6.0.3",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "@babel/register": "^7.6.2",
+    "@types/express": "^4.17.2",
+    "ts-babel": "^6.1.7",
+    "typescript": "^3.6.4"
+  }
+}
